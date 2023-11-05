@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .intro {
+    background-image: url('images/background1.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: black;
+    height: 100vh;
+    padding-top: 15%;
+  }
+  
+  .text,
+  .text1 {
+    text-align: center;
+    font-size: 100%;
+    position: relative;
+    -webkit-box-reflect: below -12px linear-gradient(transparent, rgba(0, 0, 0, 0.2));
+  }
+  
+  .text span,
+  .text1 span {
+    position: relative;
+    display: inline-block;
+    color: black;
+    font-size: 50px;
+    animation: animate 1s ease-in-out;
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 1.5;
+    animation-delay: calc(0.1s * var(--i));
+  }
+  
+  @keyframes animate {
+    0% {
+      transform: translateY(0px);
+    }
+    20% {
+      transform: translateY(-20px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+  
+  .p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+  }
+  
+  :root {
+    --clr: #90bfad;
+  }
+  
+  .centered-container {
+    padding-top: 100px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  .button1 {
+    position: relative;
+    color: black;
+    text-decoration: wavy;
+    border: outset;
+    font-size: 22px;
+    letter-spacing: 0.1em;
+    font-weight: 200;
+    padding: 10px 15px;
+    transition: all 0.3s ease 0s;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 45px;
+    border-color: black;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  .button1:hover {
+    box-shadow: 0px 0px 15px var(--clr);
+    letter-spacing: 0.25em;
+    background: var(--clr);
+  }
+  
